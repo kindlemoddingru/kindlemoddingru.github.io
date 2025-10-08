@@ -1,129 +1,129 @@
 ---
 layout: default
-parent: Jailbreaking Your Kindle
+parent: Джейлбрейк вашего Kindle
 title: AdBreak
 nav_order: 3
 ---
 
 # AdBreak
 
-> If I cannot do great things, I can do small things in a great way.
+> Если я не могу делать великие дела, я могу делать маленькие дела по-великому.
 > <br/>
-> \- Martin Luther King, Jr.
+> \- Мартин Лютер Кинг, младший
 
-AdBreak is a jailbreak released on 24/09/2025 by hhhhhhhhh.
+AdBreak — это джейлбрейк, выпущенный 24/09/2025 пользователем hhhhhhhhh.
 
-It is based on [CVE-2012-3748](https://scarybeastsecurity.blogspot.com/2017/05/ode-to-use-after-free-one-vulnerable.html).
-
-{: .note}
-> Scribe devices must be using a French account to enable ads
+Он основан на [CVE-2012-3748](https://scarybeastsecurity.blogspot.com/2017/05/ode-to-use-after-free-one-vulnerable.html).
 
 {: .note}
-> Special thanks to Chris Evans (@scarybeasts) for a lot of the exploit code, hackerdude for the modified JB script.
+> Для устройств Scribe нужно использовать французский аккаунт, чтобы включить рекламу
 
-## Prerequisites
+{: .note}
+> Особая благодарность Chris Evans (@scarybeasts) за большую часть кода эксплойта и hackerdude за модифицированный JB-скрипт.
 
-- You will need a PC, cable
-- Non-blacklisted, registered, ad-enabled Kindle
-- Firmware 5.18.1 and above (possibly patched after 5.18.5.0.1)
+## Требования
+
+- Потребуется ПК, кабель
+- Kindle с рекламой, зарегистрированный и не в чёрном списке
+- Прошивка 5.18.1 и выше (возможно, не работает после 5.18.5.0.1)
 
 {: .highlight}
-If you face any issues, please check the [troubleshooting](#troubleshooting) section. It also includes details on how you could possibly re-enable ads on a kindle which does not have them at present.
+Если возникнут проблемы, см. раздел [Troubleshooting](#troubleshooting). Там также есть информация о том, как снова включить рекламу на Kindle, где она отключена.
 
-## Installation Guide
+## Руководство по установке
 
 <div id="guide">
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
     <div id="stepwrapper" class="stepwrapper">
         <div class="step">
-            <h2>Download the latest AdBreak release:</h2>
+            <h2>Скачайте последнюю версию AdBreak:</h2>
             <div class="stepContent">
-                <a href="https://github.com/htimesnine/AdBreak/releases/download/v1.0.1/adbreak.zip" class="btn btn-purple">Download</a>
+                <a href="https://github.com/htimesnine/AdBreak/releases/download/v1.0.1/adbreak.zip" class="btn btn-purple">Скачать</a>
                 <p class="note">
-                    If your Kindle is <b>is not yet registered</b>, make sure to follow <a href="../prevent-auto-update.html">these steps to prevent your Kindle from automatically updating</a> before registering your device with Amazon. This will help you avoid an automatic firmware update during the registration process.
+                    Если ваш Kindle <b>ещё не зарегистрирован</b>, обязательно выполните <a href="../prevent-auto-update.html">эти шаги, чтобы предотвратить автоматическое обновление</a> перед регистрацией устройства на Amazon. Это поможет избежать автоматического обновления прошивки во время регистрации.
                 </p>
                 <p class="warning">
-                    Please use WinterBreak on firmware <code>5.18.0.2</code> and below.
+                    Используйте WinterBreak на прошивках <code>5.18.0.2</code> и ниже.
                 </p>
             </div>
         </div>
         <div class="step">
-            <h2>Download Ads</h2>
+            <h2>Скачайте рекламу</h2>
             <div class="stepContent">
-                <p>Leave your kindle for a while, connected to the internet, so it can download advertisements.<br/><br/> If you press the lock button, an advertisement should be displayed.<br/><br/> If advertisements aren't being downloaded after a while, a factory reset may help.</p>
+                <p>Оставьте Kindle подключённым к интернету, чтобы он скачал рекламные объявления.<br/><br/> Если нажать кнопку блокировки, должно появиться рекламное изображение.<br/><br/> Если реклама не появляется, попробуйте сброс к заводским настройкам.</p>
             </div>
         </div>
         <div class="step">
-            <h2>Aeroplane Mode</h2>
+            <h2>Режим полёта</h2>
             <div class="stepContent">
-                <p>Once you have verified ads are displayed on the lockscreen, enable airplane mode.</p>
+                <p>После того как убедились, что реклама отображается на экране блокировки, включите режим полёта.</p>
                 <img src="./airplane_mode.png" /> 
             </div>
         </div>
         <div class="step">
-            <h2>View all ads</h2>
+            <h2>Просмотр всех объявлений</h2>
             <div class="stepContent">
-                <p>Click on the top right menu and select "View all ads", which should display multiple "special offers".</p>
+                <p>Нажмите на меню в правом верхнем углу и выберите "View all ads", чтобы увидеть несколько "special offers".</p>
                 <img src="./view_ads.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Copy .assets</h2>
+            <h2>Скопируйте .assets</h2>
             <div class="stepContent">
-                <p>Plug in the Kindle, open the system folder and copy the ".assets" folder to your computer.</p>
+                <p>Подключите Kindle, откройте системную папку и скопируйте папку ".assets" на компьютер.</p>
                 <img src="./copy_assets.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Unzip AdBreak</h2>
+            <h2>Распакуйте AdBreak</h2>
             <div class="stepContent">
-                <p>Unzip the previously downloaded AdBreak, and place the extracted contents within the ".assets" folder located on your computer.</p>
+                <p>Распакуйте ранее скачанный AdBreak и поместите содержимое внутрь папки ".assets" на компьютере.</p>
                 <img src="./copy_adbreak.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Run The Replace Script</h2>
+            <h2>Запустите скрипт замены</h2>
             <div class="stepContent">
                 <div class="version-block">
                     <p class="version-label">Windows:</p>
-                    <p>Double-click on "replace.bat" to run it.</p>
+                    <p>Дважды кликните на "replace.bat" для запуска.</p>
                 </div>
                 <div class="version-block">
                     <p class="version-label">MacOS/Linux:</p>
-                    <p>Run <code> find . -name 'details.html' -exec cp adbreak.html {} \;</code> using a terminal.</p>
+                    <p>В терминале выполните <code> find . -name 'details.html' -exec cp adbreak.html {} \;</code>.</p>
                 </div>
                 <img src="./replacer.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Replace Kindle .assets</h2>
+            <h2>Замените .assets на Kindle</h2>
             <div class="stepContent">
-                <p>Delete the original kindle <code>.assets</code> and replace it with your on-PC modified copy.</p>
+                <p>Удалите оригинальную папку Kindle <code>.assets</code> и замените её модифицированной копией с компьютера.</p>
                 <img src="./replace_old_assets.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Jailbreak!</h2>
+            <h2>Джейлбрейк!</h2>
             <div class="stepContent">
-                <p>Unplug, click on an ad and go through the popups, once you click Close on "Bang!", the jailbreak script should run.</p>
+                <p>Отключите устройство, нажмите на рекламное объявление и пройдите через всплывающие окна. После нажатия Close на "Bang!" скрипт джейлбрейка должен запуститься.</p>
                 <p class="note">
-                    You can safely ignore any "application error" popups, they are irrelevant.
+                    Сообщения об ошибках приложений можно безопасно игнорировать, они не имеют значения.
                 </p>
                 <img src="./demo.png" />
             </div>
         </div>
     </div>
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
 </div>
-<script>new Guide("guide", "../post-jailbreak/setting-up-a-hotfix", "Setting Up A Hotfix");</script>
+<script>new Guide("guide", "../post-jailbreak/setting-up-a-hotfix", "Установка хотфикса");</script>
 
 <style>
 .version-block {
@@ -147,41 +147,41 @@ If you face any issues, please check the [troubleshooting](#troubleshooting) sec
 
 ### FAQ
 
-- The JB does NOT automatically remove advertisements, see Marek's scriptlet.
-- It will never work on the CS/Colorsoft! Ads can NOT be re-enabled there!
-- No, this is not "UJ"/"Unnamed Jailbreak". That is separate.
-- "Is there a way to make my device ad supported?" (see below)
+- Джейлбрейк НЕ удаляет рекламу автоматически, см. скрипт Marek.  
+- Никогда не сработает на CS/Colorsoft! Рекламу там включить нельзя!  
+- Нет, это не "UJ"/"Unnamed Jailbreak". Это отдельный проект.  
+- "Можно ли сделать устройство поддерживающим рекламу?" (см. ниже)
 
-### Common Issues
+### Частые проблемы
 
-- Can't find the system folder:
-    - On mass storage kindles, **if you cannot see the `system` folder**, you will have to navigate to the path manually, or follow [this](https://kb.blackbaud.com/knowledgebase/Article/41890) guide to see protected system folders. 
-- "Bang!" shows but the jailbreak doesn't run:
-    - Check the .assets folder on the Kindle. "jb.sh" and "patchedUks.sqsh" must be in there.
+- Не могу найти системную папку:  
+    - На Kindle с массовым хранилищем, **если не видно `system`**, нужно перейти к пути вручную или следовать [этой инструкции](https://kb.blackbaud.com/knowledgebase/Article/41890) для отображения защищённых системных папок.
+- Появляется "Bang!", но джейлбрейк не запускается:  
+    - Проверьте папку .assets на Kindle. В ней должны быть "jb.sh" и "patchedUks.sqsh".
 
-### Enabling Ads
-(needed for jailbreak, safe to remove later)
+### Включение рекламы
+(требуется для джейлбрейка, можно удалить позже)
 
-- Switch account region  
-   - Go to Manage Your Content and Devices → Preferences → Country/Region Settings → Change.  
-   - Select one of: US, UK, DE, FR, IT, ES, JP, CN  
-   - Use valid details (address, phone, email).
+- Смените регион аккаунта  
+   - Перейдите Manage Your Content and Devices → Preferences → Country/Region Settings → Change.  
+   - Выберите: US, UK, DE, FR, IT, ES, JP, CN  
+   - Укажите корректные данные (адрес, телефон, e-mail).
 
-- Add payment method  
-   - Set a default credit card and billing address matching the chosen region.  
-   - No charge should occur.
+- Добавьте способ оплаты  
+   - Установите карту и адрес по выбранному региону.  
+   - Деньги не будут сняты.
 
-- Enable special offers  
-   - In your Amazon account, turn on Special Offers for your Kindle.
+- Включите специальные предложения  
+   - В аккаунте Amazon включите Special Offers для Kindle.
 
-- Sync kindle  
-   - Connect to Wi-Fi, eventually ads will appear on lockscreen.
+- Синхронизируйте Kindle  
+   - Подключитесь к Wi-Fi, реклама появится на экране блокировки.
 
-Notes:  
-- If your kindle originally had no ads, re-disabling later is free.  
-- If your kindle is an ads model, disabling normally costs a one-time fee, but can be removed post-jb with a script.  
+Примечания:  
+- Если Kindle изначально был без рекламы, повторное отключение бесплатно.  
+- Если Kindle с рекламой, отключение обычно платное, но после JB можно удалить скриптом.
 
-## Special Thanks
+## Особая благодарность
 
-- Penguins184: This guide
-- Ceoz: Enable-ad findings
+- Penguins184: это руководство  
+- Ceoz: исследования по включению рекламы
