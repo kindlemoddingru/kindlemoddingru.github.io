@@ -1,6 +1,6 @@
 ---
 layout: default
-parent: Jailbreaking Your Kindle
+parent: Джейлбрейк вашего Kindle
 title: WinterBreak
 nav_order: 4
 ---
@@ -12,139 +12,139 @@ nav_order: 4
 > <br/>
 > \- Isaac Asimov
 
-WinterBreak is a jailbreak which was released on New Year's Day 2025 by [HackerDude](https://www.mobileread.com/forums/member.php?u=330416)
+WinterBreak — это джейлбрейк, выпущенный в Новый год 2025 года пользователем [HackerDude](https://www.mobileread.com/forums/member.php?u=330416)
 
-It is based on [Mesquito](../../mesquito/)
+Он основан на [Mesquito](../../mesquito/)
 
 {: .note}
-> Special thanks to Marek, NiLuJe, Katadelos and all the beta-testers during the development of this jailbreak.
+> Особая благодарность Marek, NiLuJe, Katadelos и всем бета-тестерам, участвовавшим в разработке этого джейлбрейка.  
 >
-> RIP bricked Kindles during beta-testing
+> R.I.P. брикнутые Kindle во время тестирования  
 > <br/>
-> RIP the original deadlines
+> R.I.P. оригинальные дедлайны
 
-## Prerequisites
-- You will need a PC
-- Your Kindle must be registered
-- Your Kindle must have a valid, internet-connected WiFi network saved to it that it can connect to during steps 8 to 10 (inclusive)
-- File archiver software to unzip files ([7-zip](https://www.7-zip.org/) or [WinRar](https://www.win-rar.com/start.html?&L=0) for Windows)
+## Необходимые условия
+- Вам понадобится компьютер (ПК)
+- Ваш Kindle должен быть зарегистрирован
+- Ваш Kindle должен иметь сохранённую действующую Wi-Fi сеть с доступом в интернет, к которой он сможет подключиться на шагах с 8 по 10 (включительно)
+- Программа для распаковки архивов ([7-zip](https://www.7-zip.org/) или [WinRar](https://www.win-rar.com/start.html?&L=0) для Windows)
 
 {: .highlight}
-If you face any issues, please check the [troubleshooting](#troubleshooting) section
+Если вы столкнулись с проблемами, обратитесь к разделу [Устранение неполадок](#troubleshooting)
 
-## Installation Guide
+## Руководство по установке
 
 <div id="guide">
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
     <div id="stepwrapper" class="stepwrapper">
         <div class="step">
-            <h2>Download the latest WinterBreak release:</h2>
+            <h2>Скачайте последнюю версию WinterBreak:</h2>
             <div class="stepContent">
-                <a href="https://github.com/KindleModding/WinterBreak/releases/latest/download/WinterBreak.tar.gz" class="btn btn-purple">Download</a>
+                <a href="https://github.com/KindleModding/WinterBreak/releases/latest/download/WinterBreak.tar.gz" class="btn btn-purple">Скачать</a>
                 <p class="note">
-                    If your Kindle is <b>is not yet registered</b>, make sure to follow <a href="../prevent-auto-update.html">these steps to prevent your Kindle from automatically updating</a> before registering your device with Amazon. This will help you avoid an automatic firmware update during the registration process
+                    Если ваш Kindle <b>ещё не зарегистрирован</b>, обязательно следуйте <a href="../prevent-auto-update.html">этим шагам, чтобы предотвратить автоматическое обновление</a> перед регистрацией устройства на Amazon. Это поможет избежать автоматического обновления прошивки во время регистрации.
                 </p>
                 <p class="warning">
-                    Winterbreak/Mesquito does NOT work on firmware <code>5.18.1</code> and beyond
+                    WinterBreak/Mesquito НЕ работают на прошивках версии <code>5.18.1</code> и выше.
                 </p>
             </div>
         </div>
         <div class="step">
-            <h2>Airplane Mode</h2>
+            <h2>Режим «В самолёте»</h2>
             <div class="stepContent">
-                <p>Turn on Airplane mode on your Kindle</p>
+                <p>Включите на Kindle режим «В самолёте»</p>
                 <img src="./airplane_mode.png" /> 
             </div>
         </div>
         <div class="step">
-            <h2>Rebooting</h2>
+            <h2>Перезагрузка</h2>
             <div class="stepContent">
-                <p>Reboot your Kindle</p>
+                <p>Перезагрузите Kindle</p>
                 <img src="./reboot.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Extracting WinterBreak</h2>
+            <h2>Распаковка WinterBreak</h2>
             <div class="stepContent">
-                <p>Once it has booted, plug the Kindle into your computer and extract the contents of the <code>WinterBreak.tar.gz</code> file to a safe place on your computer</p>
-                <p>Then copy the files to your Kindle (do not extract direcly to the Kindle as this may fail). Replace any files if you are prompted to</p>
+                <p>После загрузки устройства подключите Kindle к компьютеру и распакуйте содержимое архива <code>WinterBreak.tar.gz</code> в удобное место на компьютере</p>
+                <p>Затем скопируйте файлы на Kindle (не распаковывайте напрямую на устройство — это может привести к ошибке). Замените файлы, если система попросит подтверждение</p>
                 <p class="highlight">
-                    For Linux/MacOS users, ENSURE the hidden folder <code>.active_content_sandbox</code> has been copied to your Kindle
+                    Пользователи Linux/MacOS: УБЕДИТЕСЬ, что скрытая папка <code>.active_content_sandbox</code> была скопирована на Kindle
                 </p>
                 <img src="./file_list.png" />
             </div>
         </div>
-<div class="step">
-            <h2>Entering Mesquito</h2>
+        <div class="step">
+            <h2>Запуск Mesquito</h2>
             <div class="stepContent">
-                <p>Eject the Kindle from your computer</p>
-                <p>Open the Kindle Store on your Kindle by clicking on the cart icon on the home screen</p>
-                <p>When prompted, click <code>Yes</code> to turn off Airplane mode</p>
+                <p>Безопасно отключите Kindle от компьютера</p>
+                <p>Откройте магазин Kindle на устройстве, нажав на иконку корзины на главном экране</p>
+                <p>При запросе подтвердите, нажав <code>Yes</code>, чтобы выключить режим «В самолёте»</p>
                 <img src="./store_aeroplane.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Running WinterBreak</h2>
+            <h2>Запуск WinterBreak</h2>
             <div class="stepContent">
-                <p>Once Mesquito has loaded, click on the WinterBreak icon</p>
+                <p>После загрузки Mesquito нажмите на иконку WinterBreak</p>
                 <img src="./winterbreak_launcher.png" />
             </div>
         </div>
         <div class="step">
-            <h2>Done</h2>
+            <h2>Готово</h2>
             <div class="stepContent">
-                <p>Wait around 30 seconds, and your Kindle will say something along the lines of "Now you are ready to install the hotfix"</p>
-                <p>If no funky text appears, retry the guide again. Once it does, <b>turn Airplane mode back on</b> and continue to the post-jailbreak stage
+                <p>Подождите около 30 секунд — Kindle должен показать сообщение вроде «Now you are ready to install the hotfix»</p>
+                <p>Если текст не появился, повторите шаги ещё раз. Как только появится сообщение, <b>включите обратно режим «В самолёте»</b> и переходите к этапу после джейлбрейка.
                 </p>
                 <p class="warning">
-                    If present, delete the <code>update.bin.tmp.partial</code> file from your device to prevent an automatic update
+                    Если существует файл <code>update.bin.tmp.partial</code>, удалите его, чтобы предотвратить автоматическое обновление.
                 </p>
                 <img src="./winterbreak_run.png" />
             </div>
         </div>
     </div>
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
 </div>
-<script>new Guide("guide", "../post-jailbreak/setting-up-a-hotfix", "Setting Up A Hotfix");</script>
+<script>new Guide("guide", "../post-jailbreak/setting-up-a-hotfix", "Настройка Hotfix");</script>
 
-# Troubleshooting
+# Устранение неполадок
 
-If an **“Unexpected error”** occurs when you try to log in to the Kindle Store or **only the Kindle Store home page** is displayed, try the following solutions:
+Если при попытке войти в Kindle Store возникает ошибка **«Unexpected error»** или отображается только главная страница магазина, попробуйте следующие решения:
 
-### LocalStorage Replacement
+### Замена LocalStorage
 
-1. After successfully registered, plug your Kindle into your PC and delete the `.active_content_sandbox` folder,  make sure to also delete any files with a name similar to `update.bin.tmp.partial` from your Kindle to prevent an automatic update
-2. Reboot your Kindle
-3. Disable Airplane mode and connect to a WiFi connection
-4. Browse the regular Kindle Store for a couple of minutes to generate the files needed for Winterbreak to work, browse the book categories and download a free sample of any book
-5. After a couple of minutes, enable Airplane mode and plug your Kindle into your PC again
-6. Delete the cache directory in the path `.active_content_sandbox/store/resource/LocalStorage`. If this folder has not yet been generated, browse the Kindle Store for another couple of minutes until it is generated. Make sure to always delete the previously mentioned `update.bin.tmp.partial` file, especially before any rebooting
-7. Once deleted, copy the Winterbreak files to your Kindle and reboot
-8. Open the Kindle Store on your Kindle, when prompted, click `Yes` to turn off Airplane mode
+1. После успешной регистрации подключите Kindle к ПК и удалите папку `.active_content_sandbox`. Также удалите любые файлы с именем вроде `update.bin.tmp.partial`, чтобы предотвратить автоматическое обновление.
+2. Перезагрузите Kindle
+3. Отключите режим «В самолёте» и подключитесь к Wi-Fi
+4. Откройте обычный магазин Kindle и проведите там несколько минут — просматривайте категории книг и скачайте бесплатный образец любой книги, чтобы сгенерировать нужные файлы
+5. Через несколько минут снова включите режим «В самолёте» и подключите Kindle к ПК
+6. Удалите папку кэша по пути `.active_content_sandbox/store/resource/LocalStorage`. Если папка ещё не появилась, побудьте в Kindle Store ещё несколько минут, пока она не создастся. Не забудьте удалить файл `update.bin.tmp.partial` перед каждой перезагрузкой.
+7. После удаления скопируйте файлы WinterBreak на Kindle и перезагрузите устройство
+8. Откройте Kindle Store, при запросе нажмите `Yes`, чтобы выключить режим «В самолёте»
 
-### Factory Reset
-> Faced this error and found a solution [DiabloSat](https://github.com/progzone122) & [Rexathion1](https://github.com/Rexathion1)
+### Сброс к заводским настройкам
+> Ошибка и её решение найдены пользователями [DiabloSat](https://github.com/progzone122) и [Rexathion1](https://github.com/Rexathion1)
 
-1. Factory Reset your Kindle
-2. Before registering - plug your Kindle into your PC, move the WinterBreak files to the root of your storage space
-3. Login to your account, and enable Airplane mode as soon as possible
-4. Connect your Kindle into your PC and delete the cache directory at the path `.active_content_sandbox/store/resource/LocalStorage` (skip this step if the `LocalStorage` directory does not exist)
-5. Reboot your Kindle
-6. Open the Kindle Store on your Kindle
-7. When prompted, click `Yes` to turn off Airplane mode
+1. Выполните сброс Kindle до заводских настроек
+2. Перед регистрацией — подключите Kindle к ПК и переместите файлы WinterBreak в корень устройства
+3. Войдите в свою учётную запись и как можно скорее включите режим «В самолёте»
+4. Подключите Kindle к ПК и удалите папку кэша по пути `.active_content_sandbox/store/resource/LocalStorage` (пропустите шаг, если папка `LocalStorage` не существует)
+5. Перезагрузите Kindle
+6. Откройте Kindle Store на устройстве
+7. При запросе нажмите `Yes`, чтобы выключить режим «В самолёте»
 
+# Особая благодарность нашим отважным бета-тестерам
 
-# Special Thanks To Our Courageous Beta Testers
-- Crystals (Bricked their PW4 testing)
-- mergen3107 (Came up with the "WinterBreak" name)
+- Crystals (брикнул свой PW4 во время тестирования)
+- mergen3107 (придумал название "WinterBreak")
 - Bomberfish
 - BionicGecko
 - Juliet

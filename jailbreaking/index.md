@@ -1,33 +1,33 @@
 ---
 layout: default
-title: Jailbreaking Your Kindle
+title: Джейлбрейк вашего Kindle
 nav_order: 1
 has_children: true
 ---
 
-# Jailbreaking Your Kindle
-Jailbreaking a Kindle:
-- Allows devs to create system modifications or extensions to extend the functionality of the device further.
-- Also allows for the development of custom homebrew to run on the Kindle
-- Why not?
+# Джейлбрейк Kindle
+Взлом (джейлбрейк) Kindle:
+- Позволяет разработчикам создавать модификации системы и расширения, чтобы добавить устройству новые функции.
+- Также открывает возможность разрабатывать и запускать собственные приложения (homebrew) на Kindle.
+- Почему бы и нет?
 
-## What can I do?
-As a user, this gives you access to:
-- Custom screensavers
-- Custom fonts on firmwares that do not support it
-- Homebrew such as apps, games and more
-- [Downgrading your firmware](../firmware-and-flashing/downgrading)
+## Что я смогу делать?
+После джейлбрейка ты получаешь доступ к:
+- Пользовательским заставкам
+- Пользовательским шрифтам (даже на версиях прошивки, где они не поддерживаются)
+- Неофициальным приложениям, играм и другим программам
+- [Откат прошивки](../firmware-and-flashing/downgrading)
 
 {: .warning}
-> Please be aware of the risks of jailbreaking before you jailbreak your Kindle including, but not limited to:
-> - Potentially voiding the Kindle's waranty
-> - Bricking (permanently breaking) the device
-> - Security Risks
+> Перед тем как взломать Kindle, обязательно ознакомься с возможными рисками, включая, но не ограничиваясь:
+> - Потенциальной потерей гарантии устройства
+> - Риском «брикнуть» (навсегда повредить) устройство
+> - Угрозами безопасности
 > 
-> Always jailbreak at your own risk.
-> If you don't know what you are doing or are unsure, don't do it.
+> Выполняй джейлбрейк на свой страх и риск.
+> Если ты не уверен в своих действиях — лучше не делай этого.
 
-[Getting Started](./getting-started.md){: .btn .btn-purple}
+[Руководство по джейлбрейку](./getting-started.md){: .btn .btn-purple}
 
-## Credits
-Parts of this page were adapted from [Reddit](https://www.reddit.com/r/kindle/comments/1hrwytr/comment/m516ft5/)
+## Благодарности
+Часть информации на этой странице адаптирована с [Reddit](https://www.reddit.com/r/kindle/comments/1hrwytr/comment/m516ft5/)

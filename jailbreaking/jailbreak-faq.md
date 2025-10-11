@@ -1,235 +1,233 @@
 ---
 layout: default
-parent: Jailbreaking Your Kindle
-title: Kindle Jailbreak FAQ
+parent: Джейлбрейк вашего Kindle
+title: Часто задаваемые вопросы
 nav_order: 98
 ---
 
-# Frequently Asked Questions
+# Часто задаваемые вопросы
 
-We recommend reading this article before or after jailbreaking your Kindle device and share it with other people.
+Рекомендуем прочитать эту статью до или после джейлбрейка вашего Kindle и поделиться ею с другими.
 
 {: .note}
-Most of these instructions are subjected to changes due to newer jailbreaks, patches, extensions, firmware versions, etc. <br>`(Last updated: May 24th, 2025)`
+Большинство инструкций могут со временем меняться из-за появления новых методов джейлбрейка, патчей, расширений, версий прошивки и т.д.  
+`(Последнее обновление: 24 мая 2025 года)`
 
-## General/Account
+## Общие вопросы / Учётная запись
 ---
 
-### Can I jailbreak my Kindle with Winterbreak if my device is unregistered/blacklisted?
+### Могу ли я сделать джейлбрейк с помощью Winterbreak, если моё устройство не зарегистрировано или заблокировано?
 
-Winterbreak needs your Kindle to be registered, it also needs a valid, internet-connected WiFi network saved.
+Winterbreak требует, чтобы Kindle был зарегистрирован, а также чтобы было сохранено действующее Wi-Fi-соединение с доступом в интернет.  
 
-It's still possible to jailbreak an unregistered/blacklisted device, but currently, the only jailbreaking methods for those devices work on or below firmware `5.16.2.1.1`. You can find these jailbreaking methods in [Legacy Jailbreaks](https://kindlemodding.org/jailbreaking/Legacy/).
+Возможно взломать незарегистрированное или заблокированное устройство, но в данный момент такие методы работают только на прошивках `5.16.2.1.1` и ниже. Эти способы можно найти в разделе [Старые джейлбрейки](https://kindlemodding.org/jailbreaking/Legacy/).
 
-### My Kindle updated to a firmware version that doesn't have any jailbreak method! Can I still jailbreak it?
+### Мой Kindle обновился до прошивки, для которой ещё нет метода джейлбрейка! Можно ли всё ещё взломать?
 
-**No**.
+**Нет.**
 
-You'll have to wait for a new jailbreak method (or patch) to be released. **This may take weeks or even months**. To protect your Kindle from automatic updates, **forget** all saved internet connections, enable Airplane mode, and wait.
+Придётся дождаться выхода нового метода или патча. Это может занять **несколько недель или даже месяцев**.  
+Чтобы защитить Kindle от автоматических обновлений — **удалите** все сохранённые сети Wi-Fi, включите «Режим полёта» и ждите.  
 
-If you still want to use the internet on your Kindle while avoiding automatic updates, you might find [this guide helpful](https://kindlemodding.org/jailbreaking/prevent-auto-update.html).
+Если вы хотите пользоваться интернетом, но избегать обновлений — [вот полезная инструкция](https://kindlemodding.org/jailbreaking/prevent-auto-update.html).
 
-#### Can I downgrade my Kindle so I can jailbreak it?
+#### Могу ли я понизить версию прошивки, чтобы сделать джейлбрейк?
 
-**No**.
+**Нет.**
 
-Your Kindle must be jailbroken first in order to downgrade. This is because Amazon has never provided a way to downgrade on stock firmware.
+Kindle должен быть уже взломан, чтобы это сделать. Amazon не предоставляет возможности даунгрейда на обычной прошивке.
 
-### Can I remove my account after jailbreaking?
+### Можно ли удалить учётную запись после джейлбрейка?
 
-Yes, but you will have to log in again if you want to jailbreak from scratch. The jailbreak will still work whether you log back in or log out. 
+Да, но если вы захотите сделать джейлбрейк заново, придётся снова войти в аккаунт.  
+Джейлбрейк продолжит работать независимо от того, вошли вы в аккаунт или нет.  
 
 {: .highlight}
-After unregistering, the Kindle will delete all files located in the documents folder, including the KUAL Launcher booklet and any other scripts that have been transferred. Be sure to back up these files first.
+После удаления регистрации Kindle удалит все файлы из папки `documents`, включая буклет KUAL Launcher и все скрипты. Сделайте резервную копию заранее.
 
-### Can I un-jailbreak my Kindle?
+### Можно ли удалить джейлбрейк?
 
-Yes, perform a factory reset on the device and then install the same firmware update (or higher). 
+Да — выполните сброс устройства к заводским настройкам и установите ту же или более новую прошивку.  
 
-Don't forget to re-enable automatic updates first (`Restore` option in `renametobin`) to avoid an update block. 
+Перед этим не забудьте снова включить автообновления (опция `Restore` в `renametobin`), чтобы снять блокировку обновлений.
 
-### Will this get my Amazon account banned?
+### Могут ли заблокировать мой аккаунт Amazon?
 
-No reports of Amazon accounts being banned after jailbreaking have been reported so far. However, please refrain from telling support that you have modified your device.
+Нет случаев блокировки аккаунтов Amazon после джейлбрейка не зафиксировано.  
+Тем не менее, **не сообщайте в поддержку**, что вы модифицировали устройство.
 
-### Will this void the warranty on my Kindle device?
-Probably.
+### Джейлбрейк аннулирует гарантию?
 
-### How do I get the Amazon store back again?
+Скорее всего, да.
 
-[Read and follow this guide](https://kindlemodding.org/jailbreaking/post-jailbreak/re-enabling-the-store/).
+### Как вернуть магазин Amazon?
 
-### What does soft-float and hard-float firmware means?
+[Следуйте этой инструкции](https://kindlemodding.org/jailbreaking/post-jailbreak/re-enabling-the-store/).
 
-Starting with version 5.16.3, Kindles started using hard-float architecture (on-chip floating point unit) for most processing tasks, compared to the soft-float architecture, which emulated in software.
+### Что значит soft-float и hard-float прошивка?
 
-While the underlying system appears mostly the same, many internal changes have made a lot of jailbreaking tools and extensions unusable in modern firmware versions.
+Начиная с версии 5.16.3, Kindle перешли на архитектуру **hard-float** (с аппаратным вычислением с плавающей точкой) вместо **soft-float**, где эти вычисления выполнялись программно.  
 
-This ultimately means that most extensions found on MobileRead/Discord servers won't work on hard-float firmware or viceversa unless explicitly stated (i.e NiLuJe's Screensaverhack).
+Хотя внешне система почти не изменилась, внутренние различия делают многие старые инструменты и расширения несовместимыми.  
+Это значит, что большинство расширений с MobileRead или Discord **не будут работать** на новой архитектуре, если автор явно не указал обратное (например, `NiLuJe’s Screensaverhack`).
 
-## Apps and eBooks
+## Приложения и книги
 ---
 
-### Can I still use the default reader after jailbreaking?
+### Можно ли пользоваться стандартным ридером после джейлбрейка?
 
-Yes.
+Да.
 
-#### Can I still sideload books after jailbreaking?
+#### Можно ли загружать книги вручную (sideload) после джейлбрейка?
 
-Yes.
+Да.
 
-#### Will my books and highlights be deleted after jailbreaking?
+#### Удалятся ли книги и заметки после джейлбрейка?
 
-No.
+Нет.
 
 {: .note}
-if your device has been in Airplane mode for a long period of time, there is a possibility that [Amazon will delete all sideloaded books](https://www.mobileread.com/forums/showpost.php?p=4419300&postcount=409) from your device after reconnecting to WiFi due to an internal book tag. This can happen regardless of whether your device is jailbroken or not.
+Если устройство долгое время было в режиме полёта, возможно, что после подключения к Wi-Fi [Amazon удалит все вручную загруженные книги](https://www.mobileread.com/forums/showpost.php?p=4419300&postcount=409) из-за внутреннего тега. Это происходит независимо от того, взломан Kindle или нет.
 
-### Will Libby/Readwise/GoodReads/Kindle Unlimited/Send To Kindle still work after jailbreaking?
+### Будут ли работать Libby / Readwise / GoodReads / Kindle Unlimited / Send To Kindle?
 
-Yes. Jailbreaking doesn’t interfere with any of these services.
+Да. Джейлбрейк не мешает этим сервисам.
 
-#### Can I use those applications within KOReader?
+#### Можно ли использовать их в KOReader?
 
-Unless there's a plugin for it, no.
+Только если есть соответствующий плагин — обычно нет.
 
-### Can I install Android apps on my jailbroken Kindle (Libby, Nook, Webtoon)?
+### Можно ли установить Android-приложения (Libby, Nook, Webtoon)?
 
-Unless there's a extension/port for any of them, no.
+Нет, если нет порта или расширения специально для Kindle.
 
-### How do I read my Amazon ebooks within KOReader?
+### Как читать книги Amazon в KOReader?
 
-KOReader currently doesn’t (and likely never will) support the proprietary formats that Amazon converts all ebooks into (KFX, AZW3, and very limited support for MOBI). It is recommended to get all your books as EPUB and store them in a separate folder for easy access.
+KOReader не поддерживает (и, вероятно, никогда не будет поддерживать) форматы Amazon — `KFX`, `AZW3` и только частично `MOBI`.  
+Рекомендуется использовать формат `EPUB` и хранить книги в отдельной папке.
 
-### How do I read my Libby books?
+### Как читать книги из Libby?
 
-You cannot use the Libby service within KOReader. You can get the EPUB file from Libby by following [this guide](https://help.libbyapp.com/en-us/6059.htm).
+В Libby нельзя читать напрямую через KOReader. Но можно получить EPUB-файл, следуя [этой инструкции](https://help.libbyapp.com/en-us/6059.htm).
 
-### Where can I download free e-books?
+### Где скачать бесплатные книги?
 
-**You can Google this.**
+**Поищите в Google.**
 
 ## KOReader
 ---
 
-### What is the difference between the three KOReader launch options?
+### В чём разница между тремя вариантами запуска KOReader?
 
-- `"Start KOReader"`: The designed way to start KOReader.
-- `"Start KOReader (no framework)"`: Temporarily "kills" the Kindle UI to allocate more resources to KOReader.
-- `"Start KOReader (ASAP)"`: Skips a couple of checks and starts KOReader as soon as possible.
+- `"Start KOReader"` — стандартный запуск.  
+- `"Start KOReader (no framework)"` — временно отключает интерфейс Kindle, чтобы выделить больше ресурсов.  
+- `"Start KOReader (ASAP)"` — пропускает проверки и запускает KOReader максимально быстро.
 
-### I can't no longer transfer files through USB while I am on KOReader!
+### Почему не могу передавать файлы по USB во время работы KOReader?
 
-KOReader currently does not support USBMS mode (USB transfer) and will only charge the device, if you want to transfer files you must exit KOReader to do so. 
+KOReader не поддерживает режим USB-накопителя. Чтобы передать файлы, нужно выйти из KOReader.
 
-### Do I have to launch KOReader through KUAL?
+### Обязательно ли запускать KOReader через KUAL?
 
-Not necessarily.
+Не обязательно.  
+Можно запускать его через [скриптлеты](https://kindlemodding.org/kindle-dev/scriptlets.html), например, через лаунчер от Marek — [здесь](https://scriptlets.notmarek.com/).  
+Также есть [расширение-буклет от yparitcher](https://github.com/yparitcher/KUAL_Booklet/releases/), и [coversetter от Stanner](https://www.mobileread.com/forums/showpost.php?p=4222466&postcount=15) для кастомизации интерфейса.
 
-You can launch it with simple [scriptlets](https://kindlemodding.org/kindle-dev/scriptlets.html), specifically, Marek's launcher that is available [here](https://scriptlets.notmarek.com/).
-
-A [KUAL booklet launcher (made by yparitcher)](https://github.com/yparitcher/KUAL_Booklet/releases/) extension is also available to install. You can further customize both the KUAL booklet and the KOR launcher with the [coversetter extension made by Stanner](https://www.mobileread.com/forums/showpost.php?p=4222466&postcount=15).
-
-## Technical
+## Технические вопросы
 ---
 
-### What is the "root directory"?
+### Что такое «корневая директория»?
 
-It's the first directory you see when you plug the device into your computer.
+Это первый каталог, который открывается при подключении Kindle к компьютеру.  
+При SSH-доступе он находится по пути `/mnt/us/`.
 
-If you have SSH access to the device, this directory can be found at `/mnt/us/`.
+### Можно ли обновлять, сбрасывать или понижать прошивку после джейлбрейка?
 
-### Can I update/factory reset/downgrade my Kindle after jailbreaking?
-
-Yes, but you must first enable Airplane mode and enable automatic updates again (`Restore` option in `renametobin`) to avoid any potential self-blocks or unwanted automatic updates.
-
-When updating, ensure that the newer version supports a jailbreak.
+Да, но сначала нужно включить «Режим полёта» и активировать автообновления (`Restore` в `renametobin`), чтобы избежать блокировок.  
+Перед обновлением убедитесь, что новая версия поддерживает джейлбрейк.
 
 {: .highlight}
-After updating/factory reset/downgrading, re-install the hotfix from scratch. KUAL and some others extensions *may* need to be re-installed too.
+После обновления, сброса или даунгрейда нужно заново установить хотфикс и, возможно, KUAL и другие расширения.
 
-### How do I downgrade my Kindle?
+### Как понизить прошивку?
 
-[Read and follow this guide](https://kindlemodding.org/firmware-and-flashing/downgrading/#downgrading-your-kindle).
+[Следуйте этой инструкции](https://kindlemodding.org/firmware-and-flashing/downgrading/#downgrading-your-kindle).
 
-### Where can I download firmware update files?
+### Где скачать файлы прошивок?
 
-[Read and follow this guide](https://kindlemodding.org/firmware-and-flashing/downloading-updates.html).
+[Смотрите здесь](https://kindlemodding.org/firmware-and-flashing/downloading-updates.html).  
+Выберите свою модель и нужную версию.
 
-Find your exact model, find the download link and re-type the numbers to get the firmware version you want.
+### Как использовать скриптлеты (.sh)?
 
-### How do I use Scriptlets (.sh)?
+Как описано в разделе [Scriptlets](https://kindlemodding.org/kindle-dev/scriptlets.html#siptlets) — просто скопируйте файл в папку `/documents` и откройте его в библиотеке Kindle.
 
-As explained in the [Scriptlets section](https://kindlemodding.org/kindle-dev/scriptlets.html#siptlets), copy the scriptlet file into the documents folder (`/documents`). Once you're in the library view mode on Kindle, simply click on it.
+### Как проверить, отключились ли автообновления после `renametobin`?
 
-### How can I check that the automatic updates have been disabled after using `renametobin`?
+Скачайте скриптлет **Check OTA Status** [отсюда](https://scriptlets.notmarek.com/).
 
-Download the "Check OTA Status" scriptlet from [here](https://scriptlets.notmarek.com/)
+### Можно ли менять заставки в стандартном интерфейсе Kindle?
 
-### Is it possible to change screensavers in the native Kindle UI?
-
-Although there are currently no extensions to change the screensavers in hard-float firmware, it is still possible to change them, but it is not recommended as it is very easy to brick the device.
-
-If you still want to change the screensavers, check the details of your default Kindle screensavers inside the `/usr/share/blanket/screensavers` folder, get root writing permissions, and set the custom ones with the same name prefix and settings (bit-depth and resolution). You can either replace them all or add them to the slideshow queue.
-
-Please note that even after following these precautions, it is not guaranteed your device won’t brick, especially if you're using GIMP to export the images.
+На прошивках с hard-float пока нет стабильных расширений для этого. Делать это вручную **не рекомендуется**, можно «убить» устройство.  
+Тем не менее, можно заменить файлы в `/usr/share/blanket/screensavers`, получив root-права, и подставить картинки с теми же параметрами (глубина цвета, разрешение).
 
 {: .highlight}
-If you are, however, running soft-float firmware prior to or on 5.16.2.1.1 you can install [NiLuJe's screensaver hack](https://www.mobileread.com/forums/showthread.php?t=195474). **Please do not make the mistake of installing this extension on hard-float firmware.**
+Если у вас soft-float прошивка 5.16.2.1.1 или ниже — можно установить [NiLuJe's screensaver hack](https://www.mobileread.com/forums/showthread.php?t=195474). **Не устанавливайте его на hard-float!**
 
 {: .note}
-You can easily change screensavers with [KOReader](https://koreader.rocks/user_guide/) (search for the "screensavers" feature).
+Менять заставки безопасно можно через [KOReader](https://koreader.rocks/user_guide/) (поиск по слову "screensavers").
 
-## Jailbreaking
+## Джейлбрейк
 ---
 
-### How can I check if my device is jailbroken?
+### Как проверить, взломано ли устройство?
 
-Type `;log` into the search bar, if a message pop ups, you're jailbroken.
+Введите `;log` в строку поиска. Если появится сообщение — джейлбрейк активен.
 
-### KUAL stopped working!/I can't no longer launch any of my extensions!
-Verify if your device is still jailbroken by typing `log;` into the search bar.
+### KUAL перестал работать / не запускаются расширения
 
-- If it prompted any text, [re-install the hotfix and KUAL](https://kindlemodding.org/jailbreaking/post-jailbreak/setting-up-a-hotfix/) from scratch.
-- If not [re-jailbreak](https://kindlemodding.org/jailbreaking/getting-started.html) your device.
-- If everything else failed, factory reset your device and start the jailbreak from scratch. 
+Проверьте джейлбрейк, введя `log;` в поиске.  
+- Если появился текст — [переустановите хотфикс и KUAL](https://kindlemodding.org/jailbreaking/post-jailbreak/setting-up-a-hotfix/).  
+- Если нет — [сделайте джейлбрейк заново](https://kindlemodding.org/jailbreaking/getting-started.html).  
+- Если ничего не помогает — выполните сброс и начните всё сначала.
 
-### I can't no longer update my Kindle after a factory reset/update!
+### Kindle не обновляется после сброса
 
-If you reset your Kindle in a jailbroken state with `renametobin` enabled, then your Kindle may be in a broken state, to fix this, read [this guide](https://kindlemodding.org/jailbreaking/recovering-from-a-reset.html).
+Если сброс был сделан с активным `renametobin`, устройство может зависнуть. [Читайте инструкцию](https://kindlemodding.org/jailbreaking/recovering-from-a-reset.html).
 
-### I get a message saying "Failed to remount rootfs RO, waiting"!
+### Появилось сообщение "Failed to remount rootfs RO, waiting"!
 
-This is expected, you can safely reboot your device manually (holding the power button until you get the `Restart` option)
+Это нормально. Просто перезагрузите устройство вручную, удерживая кнопку питания.
 
-### My device hasn't rebooted after the jailbreaking pop-up!
+### Устройство не перезагружается после джейлбрейка!
 
-Unless the Kindle displays in small text the message: “You are now ready to install the hotfix”, you can safely reboot and continue with the post-jailbreak instructions. If not, something wrong happened in the jailbreak process.
+Если на экране не появилось сообщение “You are now ready to install the hotfix”, можно перезапустить вручную.  
+Если сообщение отсутствует — что-то пошло не так.
 
 {: .highlight}
-Remember to delete any automatic update file that might have appeared.
+Удалите возможные файлы автообновлений.
 
-### I kept getting random "KPPMainAppV2" books added to my Kindle library, what should I do!?
+### В библиотеке появляются книги "KPPMainAppV2", что это?
 
-Kindles usually generate those books after detecting any kind of error (mostly common after exiting KOReader frameworkless), you can safely delete them. You can also disable the generation of these books by creating an empty file named `DISABLE_CORE_DUMP` to the visible USB storage root of your device.
+Это системные файлы, создаваемые при ошибках (особенно после выхода из KOReader без фреймворка). Их можно безопасно удалить.  
+Чтобы они больше не появлялись, создайте пустой файл `DISABLE_CORE_DUMP` в корне памяти Kindle.
 
-This is also the case for the "Collecting Debug Info" message.
+То же касается сообщения "Collecting Debug Info".
 
-### I have successfully jailbroken my device, what now?
+### Я успешно сделал джейлбрейк! Что дальше?
 
-You can do one of the following:
+Можно:
+- [Установить KOReader](https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html)  
+- [Понизить прошивку](https://kindlemodding.org/firmware-and-flashing/downgrading/)  
+- [Скачать скриптлеты](https://scriptlets.notmarek.com/)  
+- [Разрабатывать расширения](https://kindlemodding.org/kindle-dev/)  
+- Смотреть форумы [MobileRead](https://www.mobileread.com/forums/forumdisplay.php?f=150) или Discord сообщества Kindle Modding  
+- Установить Alpine Linux  
+- [Поддержать Winterbreak и Wiki ❤️](https://ko-fi.com/hackerdude)  
 
-- [Install KOReader](https://kindlemodding.org/jailbreaking/post-jailbreak/koreader.html)
-- [Downgrade your Kindle](https://kindlemodding.org/firmware-and-flashing/downgrading/)
-- [Download some scriptlets](https://scriptlets.notmarek.com/)
-- [Develop more extensions](https://kindlemodding.org/kindle-dev/) 
-- Browse [MobileRead](https://www.mobileread.com/forums/forumdisplay.php?f=150) or the Kindle Modding Community Discord Server for more scriplets and extensions.
-- Install Alpine Linux
-- [Support Winterbreak & the Wiki ❤️](https://ko-fi.com/hackerdude) 
-
-### What does the KFT option in the settings menu do?
+### Что делает параметр KFT в настройках?
 
 <p>¯\_(ツ)_/¯</p>
 
-## Credits
-- Written by Bundlerocks
+## Благодарности
+- Автор: Bundlerocks

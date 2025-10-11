@@ -1,39 +1,39 @@
-# Kindle Modding Wiki
+# Kindle Моддинг Вики
 
-## Getting Started
+## Начало работы
 
-This project is a static website built with [Jekyll](https://jekyllrb.com/) using the [just-the-docs](https://just-the-docs.com/) theme.
+Этот проект — статический веб-сайт, созданный с помощью [Jekyll](https://jekyllrb.com/) с использованием темы [just-the-docs](https://just-the-docs.com/).
 
-### Prerequisites
+### Необходимые компоненты
 - [Ruby](https://www.ruby-lang.org/en/downloads/)
 - [Bundler](https://bundler.io/)
 
-### Installation
-1. **Install Bundler**
-   - Open a terminal (PowerShell or Command Prompt) and run:
+### Установка
+1. **Установите Bundler**
+   - Откройте терминал (PowerShell или Командную строку) и выполните:
      ```sh
      gem install bundler
      ```
-2. **Install project dependencies**
-   - In the project directory, run:
+2. **Установите зависимости проекта**
+   - В директории проекта выполните:
      ```sh
      bundle install
      ```
 
-## Development
+## Разработка
 
-To run the site locally for development:
+Чтобы запустить сайт локально для разработки:
 
-1. In the project directory, start the Jekyll server:
+1. В директории проекта запустите сервер Jekyll:
    ```sh
    bundle exec jekyll serve
    ```
-2. Open your browser and go to [http://localhost:4000](http://localhost:4000)
+2. Откройте браузер и перейдите по адресу [http://localhost:4000](http://localhost:4000)
 
-The site will automatically reload when you save changes to files.
+Сайт будет автоматически перезагружаться при сохранении изменений в файлах.
 
-## Troubleshooting
-- If you have problems installing the `wdm` gem on Windows, you can comment out or remove the `gem "wdm"` line in your `Gemfile`. This gem is optional and not required for the site to work.
+## Устранение неполадок
+- Если у вас возникают проблемы при установке пакета `wdm` на Windows, можно закомментировать или удалить строку `gem "wdm"` в файле `Gemfile`. Этот пакет необязателен и не требуется для работы сайта.
 ---
 
-For more information, see the [Jekyll documentation](https://jekyllrb.com/docs/).
+Для получения дополнительной информации смотрите [документацию Jekyll](https://jekyllrb.com/docs/).
