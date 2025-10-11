@@ -8,7 +8,7 @@ nav_order: 0
 ---
 
 # The Kindle Modding Wiki
-This is the Kindle Modding wiki, an online resource which hopes to consolidate all Kindle Modding knowledge into a centralised resource.
+This is the Kindle Modding wiki, an online resource which hopes to consolidate all Kindle Modding knowledge into a centralised resource..
 
 ## Jailbreaking?
 Just want to jailbreak your Kindle to get access to KOReader and other homebrew?
