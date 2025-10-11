@@ -7,8 +7,8 @@ title: Главная
 nav_order: 0
 ---
 
-# The Kindle Modding Wiki
-This is the Kindle Modding wiki, an online resource which hopes to consolidate all Kindle Modding knowledge into a centralised resource..
+# Kindle Моддинг Вики
+Это вики по моддингу Kindle, онлайн-ресурс, который стремится собрать все знания о моддинге Kindle в одном централизованном источнике.
 
 ## Джейлбрейкаешь?
 Хочешь просто взломать свой Kindle, чтобы получить доступ к KOReader и другим кастомным приложениям?
