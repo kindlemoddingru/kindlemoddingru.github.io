@@ -51,7 +51,7 @@ class Guide {
             } else {
                 buttonSet.children[2].classList.remove("btn-purple");
                 buttonSet.children[2].classList.add("btn-green");
-                buttonSet.children[2].innerText = "Next Step";
+                buttonSet.children[2].innerText = "Следующий шаг";
             }
 
             buttonSet.getElementsByTagName("span")[0].innerText = `${this.currentStep+1}/${this.steps.length}`;

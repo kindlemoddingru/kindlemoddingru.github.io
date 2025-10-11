@@ -1,67 +1,67 @@
 ---
 layout: default
-parent: Jailbreaking Your Kindle
-title: Prevent Automatic Updates
+parent: Джейлбрейк вашего Kindle
+title: Предотвращение автоматических обновлений
 nav_order: 99
 has_children: true
 ---
 
-# Preventing Automatic Updates by Filling Kindle Storage
+# Предотвращение автоматических обновлений через заполнение памяти Kindle
 
-## Why Fill the Kindle's Storage?
+## Зачем заполнять память Kindle?
 
-Kindle devices can automatically download and install firmware updates when they have enough free storage space. These updates can block jailbreaking methods. Automatic updates may occur when:
+Устройства Kindle могут автоматически загружать и устанавливать обновления прошивки, если у них достаточно свободного места. Эти обновления могут заблокировать возможность джейлбрейка. Автоматические обновления происходят, когда:
 
-- You open the Kindle Store.
-- You register your Kindle to an Amazon account.
-- The device is connected to Wi-Fi, even briefly.
-- The Kindle is rebooted while connected to the internet.
+- Вы открываете магазин Kindle.
+- Вы регистрируете Kindle на аккаунт Amazon.
+- Устройство подключается к Wi-Fi, даже на короткое время.
+- Kindle перезагружается при подключённом интернете.
 
-Filling the Kindle's storage (leaving only 50-200 MB free) prevents the device from downloading and installing updates, as the update process requires more free space.
+Если заполнить память устройства (оставив только 50–200 МБ свободного места), Kindle не сможет загрузить и установить обновление, так как для этого требуется больше свободного пространства.
 
-## How to Fill the Kindle's Storage
+## Как заполнить память Kindle
 
 {: .warning}
-> Delete `update-whatever.bin` OR `update.partial.bin`, and turn on Airplane Mode!
+> Удалите файлы `update-whatever.bin` ИЛИ `update.partial.bin` и включите режим полёта!
 
-You can use a simple script to fill your Kindle's storage with dummy files, leaving only a small amount of free space. This script is available in the [Kindle-Filler-Disk GitHub repository](https://github.com/bastianmarin/Kindle-Filler-Disk/) along with other useful scripts for Windows, macOS, and Linux.
+Можно воспользоваться простым скриптом, который заполнит память Kindle «пустыми» файлами, оставив немного свободного места. Скрипт доступен в [репозитории Kindle-Filler-Disk на GitHub](https://github.com/bastianmarin/Kindle-Filler-Disk/) — там же есть версии для Windows, macOS и Linux.
 
 {: .note}
-> The script will not work on 11th gen Kindles and newer because these devices use MTP to connect to computers
+> Скрипт не работает на Kindle 11-го поколения и новее, так как они подключаются к компьютеру через MTP.
 >
-> If this is your situation, you have two options:
-> 1. Delete any stray files ending in <code>.bin</code>, or have a similar name to <code>update.bin.tmp.partial</code> manually at every step of the Jailbreak guide
-> 2. Manually fill your Kindle. Download the [Filler files](https://github.com/bastianmarin/Kindle-Filler-Disk/tree/main/MTP/) that match your Kindle's storage from the link below. Extract the files, then move them to the root of your Kindle (you can also save them on a separate folder). After doing so, make sure to leave only 50–200 MB of free space
+> В этом случае у вас есть два варианта:
+> 1. 1. На каждом этапе руководства по джейлбрейку вручную удалять все файлы, оканчивающиеся на <code>.bin</code>, или с именем вроде <code>update.bin.tmp.partial</code>.
+> 2. Заполнить Kindle вручную. Скачайте [файлы-заполнители](https://github.com/bastianmarin/Kindle-Filler-Disk/tree/main/MTP/), соответствующие объёму памяти вашего Kindle, распакуйте их и перенесите в корень устройства (можно в отдельную папку). После этого убедитесь, что свободного места осталось 50–200 МБ.
 
 
 <div id="guide">
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
     <div id="stepwrapper" class="stepwrapper">
         <div class="step">
-            <h2>1. Put Your Kindle in Airplane Mode</h2>
+            <h2>1. Включите режим полёта</h2>
             <div class="stepContent">
-                <p>Turn on Airplane mode on your Kindle</p>
+                <p>На Kindle включите режим полёта</p>
                 <img src="./WinterBreak/airplane_mode.png" />
             </div>
         </div>
         <div class="step">
-            <h2>2. Connect Your Kindle to Your Computer via USB</h2>
+            <h2>2. Подключите Kindle к компьютеру через USB</h2>
             <div class="stepContent">
-                <p>Use a USB cable to connect your Kindle to your computer.</p>
+                <p>Используйте USB-кабель для подключения Kindle к компьютеру.</p>
                 <img src="./Prevent/usb-mode.png"/>
-                <p>Wait for the Kindle to appear as a USB drive.</p>
+                <p>Дождитесь, пока устройство появится как USB-диск.</p>
             </div>
         </div>
         <div class="step">
-            <h2>3. Download the Disk Filler Script</h2>
+            <h2>3. Скачайте скрипт для заполнения памяти</h2>
             <div class="stepContent">
-                <p>Go to the <a href="https://github.com/bastianmarin/Kindle-Filler-Disk/">Kindle-Filler-Disk GitHub repository</a>.</p>
+                <p>Перейдите в <a href="https://github.com/bastianmarin/Kindle-Filler-Disk/">репозиторий Kindle-Filler-Disk на GitHub</a>.</p>
                 <img src="./Prevent/github-files.png"/>
-                <p>Download the appropriate script for your operating system:</p>
+                <p>Скачайте подходящий скрипт для вашей операционной системы:</p>
                 <div style="margin-left:2em">
                     <span><strong>Windows:</strong> <code>Filler.ps1</code></span><br/>
                     <span><strong>macOS/Linux:</strong> <code>Filler.sh</code></span>
@@ -69,69 +69,69 @@ You can use a simple script to fill your Kindle's storage with dummy files, leav
             </div>
         </div>
         <div class="step">
-            <h2>4. Move the Script to Your Kindle</h2>
+            <h2>4. Перенесите скрипт на Kindle</h2>
             <div class="stepContent">
-                <p>Copy the downloaded script file to the root directory of your Kindle (the main folder you see when you open the Kindle as a USB drive).</p>
+                <p>Скопируйте скачанный файл в корневую папку Kindle (главная директория, которая открывается при подключении устройства).</p>
                 <img src="./Prevent/root-main.png"/>
                 <span><strong>Windows:</strong> <code>Filler.ps1</code></span><br/>
                 <span><strong>macOS/Linux:</strong> <code>Filler.sh</code></span>
             </div>
         </div>
-          <div class="step">
-              <h2>5. Run the Script</h2>
-              <div class="stepContent">
+        <div class="step">
+            <h2>5. Запустите скрипт</h2>
+            <div class="stepContent">
                 <div class="version-block">
                     <p class="version-label">Windows:</p>
-                    <p>Open File Explorer and navigate to your Kindle drive.</p>
-                    <p>Right-click <code>Filler.ps1</code> and select <strong>Run with PowerShell</strong>.</p>
-                    <p>If you see an execution policy error, open PowerShell in the Kindle drive and run:</p>
+                    <p>Откройте проводник и перейдите к диску Kindle.</p>
+                    <p>Кликните правой кнопкой по <code>Filler.ps1</code> и выберите <strong>Run with PowerShell</strong>.</p>
+                    <p>Если появится ошибка политики выполнения, откройте PowerShell в папке Kindle и выполните:</p>
                     <pre><code>powershell -ExecutionPolicy Bypass -File .\Filler.ps1</code></pre>
                 </div>
                 <div class="version-block">
                     <p class="version-label">macOS/Linux:</p>
-                    <p>Open a terminal in the Kindle drive where <code>Filler.sh</code> is located.</p>
-                    <p>Make it executable if needed:</p>
+                    <p>Откройте терминал в папке, где находится <code>Filler.sh</code>.</p>
+                    <p>Сделайте файл исполняемым, если нужно:</p>
                     <pre><code>chmod +x Filler.sh</code></pre>
-                    <p>Run the script:</p>
+                    <p>Запустите скрипт:</p>
                     <pre><code>./Filler.sh</code></pre>
                 </div>
                 <img src="./Prevent/run-script.png"/>
               </div>     
             </div>
         <div class="step">
-            <h2>6. Safely Disconnect and Verify Storage</h2>
+            <h2>6. Безопасно извлеките и проверьте память</h2>
             <div class="stepContent">
-                <p>Eject your Kindle from your computer.</p>
-                <p>On your Kindle, go to <strong>Settings &gt; Device Options &gt; Device Info</strong> (or similar).</p>
-                <p>Check that the available storage is <strong>20 MB or less</strong>.</p>
+                <p>Извлеките Kindle из компьютера.</p>
+                <p>На устройстве откройте <strong>Настройки &gt; Параметры устройства &gt; Информация об устройстве</strong>.</p>
+                <p>Убедитесь, что доступно <strong>20 МБ или меньше</strong> свободного места.</p>
                 <img src="./Prevent/final.png"/>
             </div>
         </div>
         <div class="step">
-            <h2>7. Register Your Kindle</h2>
+            <h2>7. Зарегистрируйте Kindle</h2>
             <div class="stepContent">
-                <p>With storage nearly full, connect to Wi-Fi and register your Kindle to your Amazon account. The device will not be able to download updates due to lack of space.</p>
+                <p>При почти заполненной памяти подключите Kindle к Wi-Fi и зарегистрируйте его в аккаунте Amazon. Обновление не скачается из-за нехватки места.</p>
             </div>
         </div>
         <div class="step">
-            <h2>8. Enable Airplane Mode Again</h2>
+            <h2>8. Снова включите режим полёта</h2>
             <div class="stepContent">
-                <p>Immediately after registration, enable <strong>Airplane Mode</strong> to prevent any update attempts.</p>
-                <p>Proceed with the next jailbreak steps (such as WinterBreak).</p>
+                <p>Сразу после регистрации снова включите <strong>режим полёта</strong>, чтобы предотвратить попытки обновления.</p>
+                <p>Теперь можно переходить к следующим шагам джейлбрейка (например, WinterBreak).</p>
                 <p class="highlight">
-                    <strong>Important Note:</strong> After filling your Kindle's storage, check its contents in the <strong>main folder</strong> (root directory) and delete any files ending with <code>.bin</code> or named <code>update.bin.tmp.partial</code>. These files are automatic update attempts by the Kindle and should be removed to prevent the device from trying to install an update when you free up space.
+                    <strong>Важно:</strong> после заполнения памяти Kindle проверьте содержимое <strong>корневой папки</strong> и удалите все файлы, оканчивающиеся на <code>.bin</code> или с именем <code>update.bin.tmp.partial</code>. Это файлы автоматических обновлений — их нужно удалить, чтобы Kindle не пытался установить обновление при освобождении памяти.
                 </p>
             </div>
         </div>
     </div>
     <div class="buttons">
-        <button class="btn btn-orange" id="prev">Previous Step</button>
+        <button class="btn btn-orange" id="prev">Предыдущий шаг</button>
         <span id="stepCounter"></span>
-        <button class="btn btn-green" id="next">Next Step</button>
+        <button class="btn btn-green" id="next">Следующий шаг</button>
     </div>
 </div>
-<style>
 
+<style>
 .version-block {
     background-color: #1e1e1e;
     border-radius: 8px;
@@ -153,22 +153,15 @@ You can use a simple script to fill your Kindle's storage with dummy files, leav
 
 ---
 
-## After Jailbreak: Freeing Up Space
+## После джейлбрейка: освобождение памяти
 
-Once you have completed the jailbreak process, you can safely delete the `fill_disk` folder to recover storage space. You may also remove only some of the files if you want to keep the disk nearly full for a while longer.
+После завершения джейлбрейка вы можете удалить папку `fill_disk`, чтобы вернуть свободное место.  
+Можно также удалить только часть файлов, если вы хотите, чтобы память оставалась почти заполненной.
 
 - **Windows:**  
-  Open File Explorer and navigate to the folder containing `fill_disk`. Delete the `fill_disk` folder, or remove individual files inside it.
+  Откройте проводник и найдите папку `fill_disk`. Удалите её полностью или только часть файлов внутри.
 
 - **Linux / macOS:**  
-  Open a terminal in the folder containing `fill_disk` and run:
+  Откройте терминал в папке с `fill_disk` и выполните:
   ```sh
   rm -rf fill_disk
-  ```
-  Or remove individual files as needed.
-
-This will restore your available disk space.
-
----
-
-For more scripts and detailed guides, visit the [Kindle-Filler-Disk GitHub repository](https://github.com/bastianmarin/Kindle-Filler-Disk/).

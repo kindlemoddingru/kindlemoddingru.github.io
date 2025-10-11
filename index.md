@@ -3,34 +3,34 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: default
-title: Home
+title: Главная
 nav_order: 0
 ---
 
-# The Kindle Modding Wiki
-This is the Kindle Modding wiki, an online resource which hopes to consolidate all Kindle Modding knowledge into a centralised resource.
+# Kindle Моддинг Вики
+Это вики по моддингу Kindle — онлайн-ресурс, целью которого является объединение всей информации о моддинге Kindle в одном месте.
 
-## Jailbreaking?
-Just want to jailbreak your Kindle to get access to KOReader and other homebrew?
+## Джейлбрейкаешь?
+Хочешь просто взломать свой Kindle, чтобы получить доступ к KOReader и другим кастомным приложениям?
 
-[Getting Started With Jailbreaking](/jailbreaking/getting-started){: .btn .btn-purple }
+[Руководство по джейлбрейку](/jailbreaking/getting-started){: .btn .btn-purple }
 
-## Developing?
-Want to develop your own software?
+## Разработка?
+Хочешь создавать собственное программное обеспечение?
 
-[Getting Started With Development](/kindle-dev){: .btn .btn-purple }
+[Руководство по разработке](/kindle-dev){: .btn .btn-purple }
 
-## Questions?
-Got any questions about jailbreaking?
+## Вопросы?
+Есть вопросы о джейлбрейке Kindle?
 
-[Kindle Jailbreaking F.A.Q](/jailbreaking/jailbreak-faq.md){: .btn .btn-purple }
+[Часто задаваемые вопросы о джейлбрейке Kindle](/jailbreaking/jailbreak-faq.md){: .btn .btn-purple }
 
-## Community
-Want to join our community?
+## Сообщество
+Хочешь присоединиться к нашему сообществу?
 
-[Join Our Discord](https://dsc.gg/kindle-modding){: .btn .btn-purple }
+[Присоединиться к Discord-серверу](https://dsc.gg/kindle-modding){: .btn .btn-purple }
 
-## Useful Links
+## Полезные ссылки
 [Kindlemodshelf](https://kindlemodshelf.me/)
 
 [Mobileread Forums](https://www.mobileread.com/forums/forumdisplay.php?f=150)
